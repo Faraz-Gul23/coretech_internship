@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Web<span>Site</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="content">
+        <section class="hero" id="home">
+            <h1>Responsive Navigation Bar</h1>
+            <p>A fully responsive navigation bar with smooth animations and scroll effects.</p>
+        </section>
+        
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <p>This navigation bar is built with HTML, CSS, and JavaScript. It features a responsive design that adapts to different screen sizes, a sticky behavior that remains at the top during scrolling, and smooth animations for the mobile menu.</p>
+        </section>
+        
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <p>We specialize in creating responsive web components that enhance user experience across all devices. Our solutions are optimized for performance and accessibility.</p>
+        </section>
+        
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you're interested in our services or have any questions, please don't hesitate to reach out. We'd love to hear from you!</p>
+        </section>
+        
+        <!-- Additional content to enable scrolling -->
+        <div style="height: 800px;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
