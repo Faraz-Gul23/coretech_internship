@@ -1,0 +1,229 @@
+/* Additional Responsive Styles */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .floating-card {
+        width: 120px;
+        padding: 1rem;
+    }
+    
+    .hero-main-card {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-visual {
+        height: 300px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .floating-card {
+        width: 100px;
+        padding: 0.8rem;
+    }
+    
+    .floating-card h4 {
+        font-size: 0.8rem;
+    }
+    
+    .hero-main-card {
+        width: 150px;
+        height: 150px;
+        padding: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .newsletter,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        padding: 50px 0;
+    }
+    
+    body {
+        color: black;
+        background: white;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000ff;
+        --secondary-color: #008000;
+        --text-dark: #000000;
+        --text-light: #333333;
+        --bg-light: #ffffff;
+        --border-light: #000000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-card {
+        animation: none !important;
+    }
+}
+
+/* Dark Mode Auto-detection */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #f1f5f9;
+        --text-light: #94a3b8;
+        --bg-light: #0f172a;
+        --card-light: #1e293b;
+        --border-light: #334155;
+    }
+    
+    .navbar {
+        background: rgba(15, 23, 42, 0.9);
+        border-bottom-color: var(--border-dark);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .project-card:hover,
+    .testimonial-card:hover {
+        transform: none;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .service-link:hover {
+        gap: 8px;
+    }
+}
+
+/* Foldable Devices */
+@media (max-width: 350px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .floating-card {
+        width: 80px;
+        padding: 0.5rem;
+    }
+    
+    .floating-card h4 {
+        font-size: 0.7rem;
+    }
+    
+    .hero-main-card {
+        width: 120px;
+        height: 120px;
+        padding: 1rem;
+    }
+}
